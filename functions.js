@@ -3,29 +3,35 @@
  * @param {number} n
  * @return {string} the number as a string
  */
-
-
+function numberToString(n){
+return n.toString();
+}
 /**
  * Adds one to a given number.
  * @param {number} n
  * @return {number}
  */
-
-
+function increase(n){
+	return (++n);
+}
 /**
  * Subtracts one from a given number.
  * @param {number} n
  * @return {number}
  */
 
-
+function decrease(n){
+	return (--n);
+}
 /**
  * Adds two numbers.
  * @param {number} x
  * @param {number} y
  * @return {number} the sum
  */
-
+function add (x,y){
+	return (x+y);
+}
 
 /**
  * Subtracts the second number from the first.
@@ -33,7 +39,9 @@
  * @param {number} y
  * @return {number} the difference
  */
-
+function subtract (x,y){
+	return (x-y);
+}
 
 /**
  * Multiplies two numbers.
@@ -41,7 +49,9 @@
  * @param {number} y
  * @return {number} the product
  */
-
+function multiply (x,y){
+	return (x*y);
+}
 
 /**
  * Divides the first number by the second.
@@ -49,14 +59,18 @@
  * @param {number} y
  * @return {number} the quotient
  */
-
+function divide (x,y){
+	return (x/y);
+}
 
 /**
  * Multiplies a number by itself.
  * @param {number} x, number to be squared
  * @return {number} squared
  */
-
+function square (x){
+	return (x*x)
+}
 
 /**
  * Performs a mathematical operation on two numbers.
@@ -66,8 +80,11 @@
  * @param {number} y
  * @return {number} the result
  */
-
-
+function calculate (x,y,operation){
+	if (_operation == "add"){
+		return (x+y)
+	}
+}
 /**
  * Returns true if `a` is greater than `b`.
  * @param {number} a
