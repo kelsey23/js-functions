@@ -80,18 +80,38 @@ function square (x){
  * @param {number} y
  * @return {number} the result
  */
-function calculate (x,y,operation){
-	if (_operation == "add"){
-		return (x+y)
+function calculate (operation, x, y){
+	if (operation == "add"){
+		var result = (x + y);
+		console.log(x + " + " + y + "=" + result);
+		return (x+y);
+	}
+	if  (operation  == "subtract"){
+		var result = (x - y);
+		console.log(x + " - " + y + "=" + result);
+		return (x-y);
+	}
+	if  (operation  == "multiply"){
+		var result = (x * y);
+		console.log(x + " * " + y + "=" + result);
+		return (x*y);
+	}
+	if (operation  == "divide"){
+		var result = (x / y);
+		console.log(x + " / " + y + "=" + result);
+		return (x/y);
 	}
 }
+	calculate("add", 4, 7);
 /**
  * Returns true if `a` is greater than `b`.
  * @param {number} a
  * @param {number} b
  * @return {boolean} `a` is larger than `b`
  */
-
+function isGreaterThan (a,b){
+	return (a>b);
+}
 
 /**
  * Returns true if `a` is less than `b`.
@@ -99,7 +119,9 @@ function calculate (x,y,operation){
  * @param {number} b
  * @return {boolean} `a` is smaller than `b`
  */
-
+function isLessThan (a,b){
+	return (a<b);
+}
 
 /**
  * Returns true if `a` and `b` are equal.
@@ -107,7 +129,9 @@ function calculate (x,y,operation){
  * @param {number} b
  * @return {boolean} the numbers are equal
  */
-
+function areEqual (a,b){
+	return (a===b);
+}
 
 /**
  * Returns the smallest value of two numbers.
@@ -115,7 +139,9 @@ function calculate (x,y,operation){
  * @param {number} y
  * @return {number} the smallest number
  */
-
+function minimum (x,y){
+	return (x);
+}
 
 /**
  * Returns the largest value of two numbers.
