@@ -135,12 +135,17 @@ function areEqual (a,b){
 
 /**
  * Returns the smallest value of two numbers.
- * @param {number} x
+ * @param {number} 
  * @param {number} y
  * @return {number} the smallest number
  */
 function minimum (x,y){
-	return (x);
+	if (x<y){
+	return(x);
+	}
+	else{
+	return(y);
+	}
 }
 
 /**
@@ -149,22 +154,31 @@ function minimum (x,y){
  * @param {number} y
  * @return {number} the largest number
  */
-
+function maximum (x,y){
+	if (x>y){
+	return(x); 
+	}else{ 
+	return (y);
+	}
+}
 
 /**
  * Returns true if `n` is even.
  * @param {number} n
  * @return {boolean} the number is even
  */
-
+function isEven (n){
+	return (true);
+}
 
 /**
  * Returns true if `n` is odd.
  * @param {number} n
  * @return {boolean} the number is odd
  */
-
-
+function isOdd (n){
+	return (true);
+}
 /**
  * Returns a letter grade.
  * "A": 90-100%
@@ -176,6 +190,24 @@ function minimum (x,y){
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
+function returnLetterGrade (score,totalMaximumScore){
+var percentage = (score/totalMaximumScore);
+if (percentage>=0.9){
+	return 'A'; 
+}
+else if (percentage>=0.8){
+	return 'B';
+}
+else if (percentage>=0.7){
+	return 'C'; 
+}
+else if (percentage>=0.6){
+	return 'D';
+}
+else{
+	return 'F';
+}
+}
 
 
 /**
