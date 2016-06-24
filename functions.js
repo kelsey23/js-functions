@@ -190,7 +190,7 @@ function isOdd (n){
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
-function returnLetterGrade (score,totalMaximumScore){
+function letterGrade (score,totalMaximumScore){
 var percentage = (score/totalMaximumScore);
 if (percentage>=0.9){
 	return 'A'; 
